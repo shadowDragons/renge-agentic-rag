@@ -1,0 +1,86 @@
+[
+  {
+    "item_id": "hr_leave_001",
+    "assistant_name": "员工制度助手",
+    "question": "员工请年假至少要提前多久申请？",
+    "reference_answer": "员工申请年假至少需要提前 2 个工作日发起申请。",
+    "expected_keywords": ["年假", "提前", "2 个工作日", "申请"],
+    "grounded_keywords": ["年假", "提前 2 个工作日", "申请"],
+    "expected_citation_files": ["02_请假制度.txt"],
+    "expected_min_citations": 1,
+    "metadata": {
+      "knowledge_base": "kb_员工与人事制度",
+      "category": "请假制度"
+    }
+  },
+  {
+    "item_id": "hr_leave_002",
+    "assistant_name": "员工制度助手",
+    "question": "连续病假超过 3 天需要提供什么证明？",
+    "reference_answer": "若连续病假超过 3 天，员工必须提供二级及以上医院证明。",
+    "expected_keywords": ["连续病假", "超过 3 天", "二级及以上医院证明"],
+    "grounded_keywords": ["连续病假", "超过 3 天", "二级及以上医院证明"],
+    "expected_citation_files": ["02_请假制度.txt"],
+    "expected_min_citations": 1,
+    "metadata": {
+      "knowledge_base": "kb_员工与人事制度",
+      "category": "请假制度"
+    }
+  },
+  {
+    "item_id": "hr_expense_001",
+    "assistant_name": "员工制度助手",
+    "question": "员工差旅住宿费超标后怎么处理？",
+    "reference_answer": "差旅住宿费超标部分通常需要员工自理，具体报销按差旅报销标准执行。",
+    "expected_keywords": ["差旅", "住宿费", "超标", "员工自理", "报销标准"],
+    "grounded_keywords": ["差旅", "住宿费", "超标", "员工自理"],
+    "expected_citation_files": ["05_差旅报销标准.md"],
+    "expected_min_citations": 1,
+    "metadata": {
+      "knowledge_base": "kb_员工与人事制度",
+      "category": "差旅报销"
+    }
+  },
+  {
+    "item_id": "hr_attendance_001",
+    "assistant_name": "员工制度助手",
+    "question": "忘记打卡后要怎么补卡？",
+    "reference_answer": "员工忘记打卡后需要按考勤补卡说明提交补卡申请，并说明原因。",
+    "expected_keywords": ["补卡", "提交申请", "说明原因"],
+    "grounded_keywords": ["补卡", "提交补卡申请", "说明原因"],
+    "expected_citation_files": ["11_考勤补卡说明.md"],
+    "expected_min_citations": 1,
+    "metadata": {
+      "knowledge_base": "kb_员工与人事制度",
+      "category": "考勤"
+    }
+  },
+  {
+    "item_id": "hr_onboarding_001",
+    "assistant_name": "员工制度助手",
+    "question": "新员工入职第一天一般要准备哪些材料？",
+    "reference_answer": "新员工入职通常需要根据入职清单准备身份证明、学历材料和其他入职资料。",
+    "expected_keywords": ["入职", "清单", "身份证明", "学历材料", "资料"],
+    "grounded_keywords": ["入职清单", "身份证明", "学历材料"],
+    "expected_citation_files": ["06_入职清单.txt"],
+    "expected_min_citations": 1,
+    "metadata": {
+      "knowledge_base": "kb_员工与人事制度",
+      "category": "入职"
+    }
+  },
+  {
+    "item_id": "hr_complaint_001",
+    "assistant_name": "员工制度助手",
+    "question": "员工对处理结果不满意时可以怎么申诉？",
+    "reference_answer": "员工可以按照员工申诉流程提交申诉，并按流程等待受理与反馈。",
+    "expected_keywords": ["申诉", "申诉流程", "提交", "受理", "反馈"],
+    "grounded_keywords": ["员工申诉流程", "提交申诉", "受理", "反馈"],
+    "expected_citation_files": ["15_员工申诉流程.md"],
+    "expected_min_citations": 1,
+    "metadata": {
+      "knowledge_base": "kb_员工与人事制度",
+      "category": "申诉"
+    }
+  }
+]

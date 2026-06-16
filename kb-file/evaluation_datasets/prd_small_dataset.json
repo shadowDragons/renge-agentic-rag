@@ -1,0 +1,86 @@
+[
+  {
+    "item_id": "prd_schedule_001",
+    "assistant_name": "产品研发助手",
+    "question": "当前研发 Sprint 的长度是多少？",
+    "reference_answer": "研发排期说明中，当前 Sprint 长度为 2 周。",
+    "expected_keywords": ["Sprint", "2周"],
+    "grounded_keywords": ["Sprint 长度", "2周"],
+    "expected_citation_files": ["02_研发排期说明.txt"],
+    "expected_min_citations": 1,
+    "metadata": {
+      "knowledge_base": "kb_产品研发与项目管理",
+      "category": "研发排期"
+    }
+  },
+  {
+    "item_id": "prd_schedule_002",
+    "assistant_name": "产品研发助手",
+    "question": "版本发布节奏一般是什么样？",
+    "reference_answer": "当前版本节奏是每月一次小版本、每季度一次大版本。",
+    "expected_keywords": ["每月", "小版本", "每季度", "大版本"],
+    "grounded_keywords": ["每月一次小版本", "每季度一次大版本"],
+    "expected_citation_files": ["02_研发排期说明.txt"],
+    "expected_min_citations": 1,
+    "metadata": {
+      "knowledge_base": "kb_产品研发与项目管理",
+      "category": "研发排期"
+    }
+  },
+  {
+    "item_id": "prd_release_001",
+    "assistant_name": "产品研发助手",
+    "question": "发布前必须确认哪些关键事项？",
+    "reference_answer": "发布前至少要完成回归测试、生成发布说明，并确认数据库变更脚本。",
+    "expected_keywords": ["回归测试", "发布说明", "数据库变更脚本"],
+    "grounded_keywords": ["完成回归测试", "生成发布说明", "确认数据库变更脚本"],
+    "expected_citation_files": ["05_发布流程.md"],
+    "expected_min_citations": 1,
+    "metadata": {
+      "knowledge_base": "kb_产品研发与项目管理",
+      "category": "发布流程"
+    }
+  },
+  {
+    "item_id": "prd_bug_001",
+    "assistant_name": "产品研发助手",
+    "question": "S1 缺陷代表什么，是否需要同步进展？",
+    "reference_answer": "S1 表示核心功能严重受损，且所有 S0/S1 缺陷都需要在事故群同步进展。",
+    "expected_keywords": ["S1", "核心功能严重受损", "事故群", "同步进展"],
+    "grounded_keywords": ["S1", "核心功能严重受损", "S0/S1", "事故群同步进展"],
+    "expected_citation_files": ["04_缺陷分级标准.txt"],
+    "expected_min_citations": 1,
+    "metadata": {
+      "knowledge_base": "kb_产品研发与项目管理",
+      "category": "缺陷分级"
+    }
+  },
+  {
+    "item_id": "prd_review_001",
+    "assistant_name": "产品研发助手",
+    "question": "需求评审时通常要检查哪些内容？",
+    "reference_answer": "需求评审至少要检查目标用户与核心场景、验收标准、权限与合规要求，以及研发工作量与依赖关系。",
+    "expected_keywords": ["目标用户", "核心场景", "验收标准", "权限", "合规", "工作量", "依赖关系"],
+    "grounded_keywords": ["目标用户与核心场景", "验收标准", "权限与合规要求", "研发工作量与依赖关系"],
+    "expected_citation_files": ["12_需求评审清单.txt"],
+    "expected_min_citations": 1,
+    "metadata": {
+      "knowledge_base": "kb_产品研发与项目管理",
+      "category": "需求评审"
+    }
+  },
+  {
+    "item_id": "prd_acceptance_001",
+    "assistant_name": "产品研发助手",
+    "question": "这个项目的非功能验收要求里，对响应时间和监控有什么要求？",
+    "reference_answer": "非功能验收要求包括 95 分位响应时间小于 5 秒，且关键接口需要具备监控告警。",
+    "expected_keywords": ["95 分位", "小于 5 秒", "关键接口", "监控告警"],
+    "grounded_keywords": ["95 分位响应时间小于 5 秒", "关键接口具备监控告警"],
+    "expected_citation_files": ["15_验收标准说明.md"],
+    "expected_min_citations": 1,
+    "metadata": {
+      "knowledge_base": "kb_产品研发与项目管理",
+      "category": "验收标准"
+    }
+  }
+]

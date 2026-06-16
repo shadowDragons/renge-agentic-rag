@@ -1,0 +1,86 @@
+[
+  {
+    "item_id": "support_ticket_001",
+    "assistant_name": "客服SOP助手",
+    "question": "P1 工单要在多久内升级给值班经理和技术负责人？",
+    "reference_answer": "P1 核心业务不可用场景需要在 15 分钟内升级至值班经理与技术负责人。",
+    "expected_keywords": ["P1", "15分钟", "升级", "值班经理", "技术负责人"],
+    "grounded_keywords": ["P1", "15分钟内", "值班经理", "技术负责人"],
+    "expected_citation_files": ["02_工单升级SOP.txt"],
+    "expected_min_citations": 1,
+    "metadata": {
+      "knowledge_base": "kb_客户支持与SOP",
+      "category": "工单升级"
+    }
+  },
+  {
+    "item_id": "support_ticket_002",
+    "assistant_name": "客服SOP助手",
+    "question": "升级工单时需要附带哪些信息？",
+    "reference_answer": "升级工单时需要附带客户名称、工单编号、问题截图、复现路径和已执行排查动作。",
+    "expected_keywords": ["客户名称", "工单编号", "问题截图", "复现路径", "排查动作"],
+    "grounded_keywords": ["客户名称", "工单编号", "问题截图", "复现路径", "已执行排查动作"],
+    "expected_citation_files": ["02_工单升级SOP.txt"],
+    "expected_min_citations": 1,
+    "metadata": {
+      "knowledge_base": "kb_客户支持与SOP",
+      "category": "工单升级"
+    }
+  },
+  {
+    "item_id": "support_refund_001",
+    "assistant_name": "客服SOP助手",
+    "question": "退款流程的标准时效一般是多久？",
+    "reference_answer": "退款处理流程的标准时效通常是 3 到 7 个工作日。",
+    "expected_keywords": ["退款", "3-7个工作日", "标准时效"],
+    "grounded_keywords": ["退款处理流程", "3-7个工作日"],
+    "expected_citation_files": ["04_退款处理流程.txt"],
+    "expected_min_citations": 1,
+    "metadata": {
+      "knowledge_base": "kb_客户支持与SOP",
+      "category": "退款"
+    }
+  },
+  {
+    "item_id": "support_sla_001",
+    "assistant_name": "客服SOP助手",
+    "question": "普通客户的 P3 工单响应时效是多少？",
+    "reference_answer": "服务 SLA 中，P3 工单的响应时效为 4 小时。",
+    "expected_keywords": ["P3", "4小时", "响应时效"],
+    "grounded_keywords": ["P3", "4小时响应"],
+    "expected_citation_files": ["08_服务SLA说明.txt"],
+    "expected_min_citations": 1,
+    "metadata": {
+      "knowledge_base": "kb_客户支持与SOP",
+      "category": "SLA"
+    }
+  },
+  {
+    "item_id": "support_tier_001",
+    "assistant_name": "客服SOP助手",
+    "question": "S级客户能获得什么服务等级？",
+    "reference_answer": "S级客户会配备专属客户成功经理，并进行月度复盘。",
+    "expected_keywords": ["S级", "专属客户成功经理", "月度复盘"],
+    "grounded_keywords": ["S级", "专属客户成功经理", "月度复盘"],
+    "expected_citation_files": ["05_客户分级规则.md"],
+    "expected_min_citations": 1,
+    "metadata": {
+      "knowledge_base": "kb_客户支持与SOP",
+      "category": "客户分级"
+    }
+  },
+  {
+    "item_id": "support_account_001",
+    "assistant_name": "客服SOP助手",
+    "question": "排查账号异常时一般先检查哪些项？",
+    "reference_answer": "账号异常排查通常先确认账号是否冻结，再检查登录 IP 安全策略、验证码服务状态和身份认证服务。",
+    "expected_keywords": ["账号状态", "冻结", "登录 IP", "安全策略", "验证码服务", "身份认证服务"],
+    "grounded_keywords": ["账号状态是否冻结", "登录 IP", "安全策略", "验证码服务", "身份认证服务"],
+    "expected_citation_files": ["14_账号异常排查清单.txt"],
+    "expected_min_citations": 1,
+    "metadata": {
+      "knowledge_base": "kb_客户支持与SOP",
+      "category": "账号异常"
+    }
+  }
+]
