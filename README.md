@@ -1,4 +1,4 @@
-# Enterprise RAG Agent
+# Renge Agentic Rag
 
 一个面向企业内部知识管理场景的上传式 RAG 系统，支持本地文档入库、多知识库检索、引用式问答、人工审核工作流、任务中心、审计日志，以及基于 Langfuse 的观测、评测与 Prompt Management。
 
@@ -26,16 +26,16 @@
 
 ## 技术栈
 
-| 模块 | 技术 |
-| --- | --- |
-| 前端 | Vue 3、TypeScript、Vite、Element Plus、Pinia |
-| 后端 | FastAPI、SQLAlchemy、Pydantic Settings、Uvicorn |
-| 工作流 | LangGraph |
-| RAG | LlamaIndex、Qdrant、dense retrieval、lexical rerank |
-| 数据库 | SQLite、PostgreSQL |
-| 文档解析 | pypdf、python-docx、antiword |
-| 部署 | Docker、Docker Compose、Alembic |
-| 观测与评测 | Langfuse |
+| 模块       | 技术                                                |
+| ---------- | --------------------------------------------------- |
+| 前端       | Vue 3、TypeScript、Vite、Element Plus、Pinia        |
+| 后端       | FastAPI、SQLAlchemy、Pydantic Settings、Uvicorn     |
+| 工作流     | LangGraph                                           |
+| RAG        | LlamaIndex、Qdrant、dense retrieval、lexical rerank |
+| 数据库     | SQLite、PostgreSQL                                  |
+| 文档解析   | pypdf、python-docx、antiword                        |
+| 部署       | Docker、Docker Compose、Alembic                     |
+| 观测与评测 | Langfuse                                            |
 
 ## 项目结构
 
@@ -104,11 +104,11 @@ npm run dev
 
 开发环境内置演示账号，仅用于本地体验：
 
-| 角色 | 用户名 | 密码 | 说明 |
-| --- | --- | --- | --- |
-| 管理员 | `admin` | `admin123456` | 配置管理、运营处理、聊天 |
-| 运营 | `operator` | `operator123456` | 运营处理、聊天 |
-| 访客 | `viewer` | `viewer123456` | 只读聊天 |
+| 角色   | 用户名     | 密码             | 说明                     |
+| ------ | ---------- | ---------------- | ------------------------ |
+| 管理员 | `admin`    | `admin123456`    | 配置管理、运营处理、聊天 |
+| 运营   | `operator` | `operator123456` | 运营处理、聊天           |
+| 访客   | `viewer`   | `viewer123456`   | 只读聊天                 |
 
 登录后可以创建知识库、上传文档、配置助理并开始问答。
 
@@ -285,18 +285,18 @@ docker compose up --build
 
 后端默认 API 前缀为 `/api/v1`。
 
-| 能力 | 路径 |
-| --- | --- |
-| 登录与当前用户 | `/auth/login`、`/auth/me` |
-| 助理管理 | `/assistants` |
-| 知识库管理 | `/knowledge-bases` |
-| 文档上传与删除 | `/knowledge-bases/{id}/documents` |
-| 会话管理 | `/sessions` |
-| 聊天流式问答 | `/sessions/{session_id}/chat/stream` |
-| 任务中心 | `/jobs` |
-| 审核任务 | `/reviews` |
-| 系统总览 | `/system/overview` |
-| 健康检查 | `/health` |
+| 能力           | 路径                                 |
+| -------------- | ------------------------------------ |
+| 登录与当前用户 | `/auth/login`、`/auth/me`            |
+| 助理管理       | `/assistants`                        |
+| 知识库管理     | `/knowledge-bases`                   |
+| 文档上传与删除 | `/knowledge-bases/{id}/documents`    |
+| 会话管理       | `/sessions`                          |
+| 聊天流式问答   | `/sessions/{session_id}/chat/stream` |
+| 任务中心       | `/jobs`                              |
+| 审核任务       | `/reviews`                           |
+| 系统总览       | `/system/overview`                   |
+| 健康检查       | `/health`                            |
 
 完整接口请访问启动后的 OpenAPI 文档：
 
